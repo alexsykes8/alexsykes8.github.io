@@ -49,3 +49,32 @@ button:hover {
 .next {
   right: 0;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item {
+  position: relative;
+  width: 300px;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 2px;
+}
