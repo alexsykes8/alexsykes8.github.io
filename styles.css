@@ -140,15 +140,22 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
+  margin-bottom: 5px;
 }
 
+
 .modelling-container img {
-  width: 23%;
+  width: 24%;
   height: auto;
   display: block;
   border-radius: 2px;
+}
+
+.modelling-container video {
+    width: 24%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
 }
 
 .vtube-container {
@@ -202,6 +209,8 @@ button:hover {
 
 .expandable-banner.open .arrow {
 }
+
+
 
 
 
