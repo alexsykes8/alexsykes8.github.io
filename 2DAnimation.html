@@ -7,13 +7,71 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>2D Animation</h1>
-<p>2D animation, made in OpenToonz.</p>
+<div class="banner">
+  <h1>2D Animation</h1>
+</div>
+<div class="description">
+  <p>2D animation, made in OpenToonz. Hover over a video to start it.</p>
+</div>
 <div class="video-container">
   <video src="2DAnimation/s1.mp4" loop muted class="video"></video>
   <video src="2DAnimation/s2.mp4" loop muted class="video"></video>
   <video src="2DAnimation/s3.mp4" loop muted class="video"></video>
 </div>
+<div class="video-container">
+  <video src="2DAnimation/river.mp4" loop muted class="video"></video>
+  <video src="2DAnimation/lantern.mp4" loop muted class="video"></video>
+  <video src="2DAnimation/tiger.mp4" loop muted class="video"></video>
+</div>
+<div class="video-container">
+  <video src="2DAnimation/excited.mp4" loop muted class="video"></video>
+  <video src="2DAnimation/lighttest.mp4" loop muted class="video"></video>
+  <video src="2DAnimation/jump.mp4" loop muted class="video"></video>
+</div>
+<div class="expandable-banner">
+  <div class="banner-content">
+    <h2>Walk/Run Cycles</h2>
+  </div>
+  <div class="arrow" onclick="toggleBanner(this)">
+    <p>[Expand]</p>
+  </div>
+
+  <div class="video-container">
+    <video src="2DAnimation/runcycle.mp4" loop muted class="video"></video>
+    <video src="2DAnimation/walk1.mp4" loop muted class="video"></video>
+    <video src="2DAnimation/genshinwalk.mp4" loop muted class="video"></video>
+  </div>
+</div>
+<div class="expandable-banner">
+  <div class="banner-content">
+    <h2>Misc</h2>
+  </div>
+  <div class="arrow" onclick="toggleBanner(this)">
+    <p>[Expand]</p>
+  </div>
+
+  <div class="video-container">
+    <video src="2DAnimation/sketchy.mp4" loop muted class="video"></video>
+    <video src="2DAnimation/smile.mp4" loop muted class="video"></video>
+    <video src="2DAnimation/splash.mp4" loop muted class="video"></video>
+  </div>
+</div>
+
+
 <script src="script.js"></script>
+
+<div class="banner">
+  <h1>VTuber Models</h1>
+</div>
+<div class="description">
+  <p>VTuber models, drawn in Clip Studio Paint and animated with Live2D. These were commissions of existing character designs. The models track and replicate head movement and facial expressions.</p>
+</div>
+<div class="vtube-container">
+  <video src="2DAnimation/cami.mp4" loop muted class="video"></video>
+  <video src="2DAnimation/smudge.mp4" loop muted class="video"></video>
+</div>
+<div class="small-banner">
+  <a href="index.html">Home</a> <!-- Link back to the homepage -->
+</div>
 </body>
 </html>
