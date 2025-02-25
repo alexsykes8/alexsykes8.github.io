@@ -1,15 +1,15 @@
-let index = 0;
+document.addEventListener('DOMContentLoaded', () => {
+  const videos = document.querySelectorAll('.video-container video');
 
-function moveSlide(step) {
-  const images = document.querySelectorAll('.carousel-image');
-  index += step;
+  videos.forEach(video => {
+    video.addEventListener('mouseenter', () => {
+      video.play();
+    });
 
-  if (index < 0) {
-    index = images.length - 1;
-  } else if (index >= images.length) {
-    index = 0;
-  }
+    video.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
+});
 
-  const offset = -index * 100;
-  document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
-}
